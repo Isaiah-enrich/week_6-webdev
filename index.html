@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page</h1>
+    <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Section 1: Form -->
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4" cols="30" placeholder="Write your message"></textarea>
+        <p id="charCount">0/200 characters</p><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- Section 2: Interactive Link -->
+    <section>
+      <h2>Special Offer</h2>
+      <p>Click below to reveal a surprise:</p>
+      <a href="#" id="revealLink">Show Offer 🎁</a>
+      <p id="offerText" style="display:none;">🎉 You unlocked a 20% discount coupon: <b>SAVE20</b></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
